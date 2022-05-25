@@ -66,11 +66,22 @@ export default {
   },
 
   axios: {
-    baseURL: isDev ? "http://localhost:8080" : "https://www.miraclecoders.pl/pwa-test-api",
+    baseURL: isDev ? "https://www.miraclecoders.pl/nuxt-pwa-test/api" : "https://www.miraclecoders.pl/nuxt-pwa-test/api",
     credentials: 'include',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  build: {},
+  pwa: {
+    meta: {
+      title: 'Bartek Test Purchase PWA',
+      author: 'Bartek',
+    },
+    manifest: {
+      name: 'Test Shop',
+      short_name: 'Test Shop',
+      lang: 'en',
+      display: 'standalone',
+    },
   }
 }

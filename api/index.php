@@ -27,6 +27,12 @@ function getItems()
             'name' => 'Radeon 5300',
             'price' => 899.99,
         ],
+
+        [
+            'id' => 4,
+            'name' => 'Radeon 5700XT',
+            'price' => 1699.99,
+        ],
     ];
 
     echo json_encode($products);
